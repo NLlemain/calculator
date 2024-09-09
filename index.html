@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<link rel="icon" type="image/png" href="real.jpg"/>
+</head>
+<title>Calculator</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="calculator">
+    <input type="text" id="display" disabled>
+    <br>
+    <input type="button" value="7" onclick="addToDisplay('7')">
+    <input type="button" value="8" onclick="addToDisplay('8')">
+    <input type="button" value="9" onclick="addToDisplay('9')">
+    <input type="button" value="/" class="operator" onclick="addToDisplay('/')">
+    <br>
+    <input type="button" value="4" onclick="addToDisplay('4')">
+    <input type="button" value="5" onclick="addToDisplay('5')">
+    <input type="button" value="6" onclick="addToDisplay('6')">
+    <input type="button" value="*" class="operator" onclick="addToDisplay('*')">
+    <br>
+    <input type="button" value="1" onclick="addToDisplay('1')">
+    <input type="button" value="2" onclick="addToDisplay('2')">
+    <input type="button" value="3" onclick="addToDisplay('3')">
+    <input type="button" value="-" class="operator" onclick="addToDisplay('-')">
+    <br>
+    <input type="button" value="C" onclick="clearDisplay()">
+    <input type="button" value="0" onclick="addToDisplay('0')">
+    <input type="button" value="=" onclick="calculate()">
+    <input type="button" value="+" class="operator" onclick="addToDisplay('+')">
+    <br>
+    <input type="button" value="." onclick="addToDisplay('.')">
+    <input type="button" value="," onclick="addToDisplay(',')">
+    <input type="button" value="%" class="operator" onclick="calculatePercentage()">
+    <input type="button" value="Del"class="operator" onclick="deleteLastChar()">
+    <br>
+    <input type="button" value="(" onclick="addToDisplay('(')">
+    <input type="button" value=")" onclick="addToDisplay(')')">
+    <input type="button" value="π" class="operator" onclick="addToDisplay('π' )">
+    <input type="button" value="+/-" class="operator" onclick="addToDisplay('(-')">
+    <br>
+    <input type="button" value="sin" onclick="addToDisplay('sin(')">
+    <input type="button" value="cos" onclick="addToDisplay('cos(')">
+    <input type="button" value="tan" class="operator" onclick="addToDisplay('tan(' )">
+    <input type="button" value="00" class="operator" onclick="addToDisplay('00')">
+
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
